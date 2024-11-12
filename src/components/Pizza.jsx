@@ -1,8 +1,14 @@
 const Pizza = (props) => {
-  const { name = "", src, ingredients = "", photoName = "" } = props;
+  const {
+    name = "",
+    src = "",
+    ingredients = "",
+    photoName = "",
+    soldOut = false,
+  } = props;
 
   return (
-    <li className="pizza">
+    <li className={soldOut ? "pizza sold-out" : "pizza"}>
       <img src={src} alt={photoName} />
       <div>
         <h3>{name}</h3>
