@@ -1,4 +1,4 @@
-# menu
+# pizza-menu
 
 This is my first practice of React course by Jonas.
 
